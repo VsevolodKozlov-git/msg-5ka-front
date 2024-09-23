@@ -3,8 +3,9 @@ require('@rushstack/eslint-patch/modern-module-resolution')
 
 module.exports = {
   root: true,
-  'extends': [
+  extends: [
     'plugin:vue/vue3-essential',
+    '@vue/eslint-config-airbnb',
     'eslint:recommended',
     '@vue/eslint-config-typescript',
     '@vue/eslint-config-prettier/skip-formatting'
@@ -15,9 +16,7 @@ module.exports = {
         'cypress/e2e/**/*.{cy,spec}.{js,ts,jsx,tsx}',
         'cypress/support/**/*.{js,ts,jsx,tsx}'
       ],
-      'extends': [
-        'plugin:cypress/recommended'
-      ]
+      extends: ['plugin:cypress/recommended']
     }
   ],
   parserOptions: {
