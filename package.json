@@ -4,11 +4,11 @@
   "private": true,
   "type": "module",
   "lint-staged": {
-    "*.{json,js,ts,jsx,tsx,html, vue, scss}": [
-      "prettier --write --ignore-unknown"
-    ],
-    "*.{js, jsx,ts,tsx, vue, scss}": [
+    "*.{js,ts,jsx,tsx,vue,scss}": [
       "eslint --quiet --fix"
+    ],
+    "*.{json,html,js,ts,jsx,tsx,vue,scss}": [
+      "prettier --write --ignore-unknown"
     ]
   },
   "scripts": {

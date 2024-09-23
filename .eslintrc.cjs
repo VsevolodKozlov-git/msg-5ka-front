@@ -15,7 +15,7 @@ module.exports = {
     '@vue/eslint-config-prettier/skip-formatting'
   ],
   rules: {
-    'import/prefer-default-export': 'warn'
+    'import/prefer-default-export': 0
   },
   settings: {
     ...createAliasSetting({
